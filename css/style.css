@@ -139,19 +139,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.judul__break {
-  width: 310px;
-  word-wrap: break-word;
+.judul__main {
+  text-transform: none;
+  letter-spacing: 2px;
+  color: #fff;
 }
-@media only screen and (max-width: 56.25em) {
-  .judul__break {
-    width: 255px;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .judul__break {
-    width: 140px;
-  }
+.judul__sub {
+  text-transform: none;
+  letter-spacing: 2px;
+  color: #eaeaea;
 }
 
 .heading-line {
@@ -219,6 +215,10 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
 }
 
 .u-margin-top-xl {
@@ -408,7 +408,6 @@ body {
 .service__icon:hover, .service__icon:focus {
   background-color: #86020C;
   color: #fff;
-  box-shadow: 0 6px 50px 8px rgba(185, 0, 12, 0.15);
 }
 .service__photo {
   width: 100%;
@@ -448,22 +447,6 @@ body {
     justify-content: center;
     margin-top: 3rem;
   }
-}
-.footer__item {
-  display: flex;
-  font-size: 1.8rem;
-}
-.footer__item--1 {
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.footer__item--2 {
-  margin-right: 2rem;
-}
-.footer__item--p {
-  font-size: 1.8rem;
-  margin-left: 3rem;
-  color: #000;
 }
 
 .navigation__checkbox {
@@ -789,8 +772,9 @@ ul li.active a {
   }
 }
 .swiper-project__photo {
-  width: 60%;
-  margin-right: 8rem;
+  position: relative;
+  left: -25%;
+  margin-top: 4rem;
 }
 @media only screen and (max-width: 37.5em) {
   .swiper-project__photo {
@@ -799,19 +783,10 @@ ul li.active a {
   }
 }
 .swiper-project__text {
-  text-align: left;
+  margin-top: 4rem;
+  text-align: center;
   font-size: 5rem;
   color: #000;
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 37.5em) {
-  .swiper-project__text {
-    left: 30%;
-    font-size: 3rem;
-  }
 }
 .swiper-project__back {
   content: "";
@@ -830,6 +805,54 @@ ul li.active a {
 }
 .swiper-project:hover {
   transform: scale(1.1);
+}
+
+.project__box {
+  margin: 0 20rem;
+  display: block;
+  position: relative;
+}
+.project__box--name {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+.project__box--name:hover {
+  opacity: 1;
+}
+.project__box--name-1 {
+  padding: 2rem;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.project__box:after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+.project__box:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.project__photo {
+  width: 100%;
 }
 
 .card {

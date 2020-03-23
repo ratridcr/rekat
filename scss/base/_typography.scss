@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -6,11 +6,11 @@ body{
     color: $default-text;
 }
 
-.heading-primary{
+.heading-primary {
     text-transform: uppercase;
     color: $red;
 
-    &--1{
+    &--1 {
         display: block;
         font-size: 45px;
         font-weight: 900;
@@ -23,7 +23,8 @@ body{
             font-size: 50px;
         }
     }
-    &--2{
+
+    &--2 {
         display: block;
         font-size: 45px;
         font-weight: 300;
@@ -36,7 +37,8 @@ body{
             font-size: 50px;
         }
     }
-    &--3{
+
+    &--3 {
         display: block;
         font-size: 30px;
         font-weight: 700;
@@ -50,55 +52,56 @@ body{
     }
 }
 
-.heading-secondary{
+.heading-secondary {
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: .2rem;
     display: inline-block;
-    background-image: linear-gradient(to right,$redDark, $redLight);
+    background-image: linear-gradient(to right, $redDark, $redLight);
     background-clip: text;
     color: transparent;
     transition: all .2s;
 
-    &:hover{
+    &:hover {
         transform: scale(1.2);
         text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
         backface-visibility: hidden;
     }
 }
 
-.heading-tertiary{
+.heading-tertiary {
     font-size: 2.5rem;
     font-weight: 700;
 }
-.paragraph{
+
+.paragraph {
     color: $color-gray;
     font-size: $default-font;
 
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 3rem;
     }
 }
-.judul{
+
+.judul {
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    &__break{
-        width: 310px;
-        word-wrap: break-word;
+    &__main {
+        text-transform: none;
+        letter-spacing: 2px;
+        color: $color-white;
+    }
 
-        @include respond(tab-port) {
-            width: 255px;
-        }        
-
-        @include respond(mobile) {
-            width: 140px;
-        }
+    &__sub {
+        text-transform: none;
+        letter-spacing: 2px;
+        color: #eaeaea;
     }
 }
 
-.heading-line{
+.heading-line {
     width: 20rem;
     height: 1px;
     margin-top: 1rem;
@@ -108,19 +111,19 @@ body{
     background-color: $red;
 }
 
-.popup-judul{
+.popup-judul {
     color: $red;
     font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: .1rem;
 
-    &__sub{
+    &__sub {
         letter-spacing: .1rem;
         font-size: 1.8rem;
         color: $default-text;
     }
 
-    &__sub-judul{
+    &__sub-judul {
         text-transform: uppercase;
         font-size: 2.5rem;
         letter-spacing: .3rem;
@@ -135,7 +138,7 @@ body{
     }
 }
 
-.list-jabatan{
+.list-jabatan {
     margin-left: 4rem;
     font-size: 2.5rem;
     color: $red;
