@@ -35,12 +35,12 @@
 <body>
 
     <!-- --- awal loader --- -->
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="loader">
             <div class="loader__circle"></div>
             <div class="loader__circle"></div>
         </div>
-    </div> -->
+    </div>
     <!-- --- akhir loader --- -->
 
     <!-- --- awal navigation --- -->
@@ -57,9 +57,10 @@
             <ul class="navigation__list">
                 <li class="navigation__item active"><a href="#" class="navigation__link"><span>01</span>home</a></li>
                 <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span>history</a></li>
-                <li class="navigation__item"><a href="#service" class="navigation__link"><span>03</span>Services</a>
+                <li class="navigation__item"><a href="#service" class="navigation__link"><span>03</span>Prinsip</a>
                 </li>
-                <li class="navigation__item"><a href="#project" class="navigation__link"><span>04</span>project</a></li>
+                <li class="navigation__item"><a href="#project" class="navigation__link"><span>04</span>Kegiatan</a>
+                </li>
                 <li class="navigation__item"><a href="#team" class="navigation__link"><span>05</span>Team</a></li>
             </ul>
         </nav>
