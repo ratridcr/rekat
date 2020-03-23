@@ -169,7 +169,7 @@ body {
   text-transform: none;
   letter-spacing: 2px;
   color: #4A4A4A;
-  text-align: justify;
+  text-align: left;
 }
 
 .heading-line {
@@ -227,9 +227,8 @@ body {
   text-align: justify !important;
 }
 
-.u-margin-x-small {
-  margin-right: 4rem !important;
-  margin-left: 4rem !important;
+.u-padding-x-small {
+  padding: 0 5rem !important;
 }
 
 .u-margin-bottom-small {
@@ -436,10 +435,6 @@ body {
   height: 12rem;
 }
 
-.service__iframe {
-  width: 100%;
-  height: 30rem;
-}
 .service__icon {
   background-color: #B9000C;
   width: 14.5rem;
@@ -461,22 +456,41 @@ body {
   height: 100%;
 }
 
-.team__iframe {
-  width: 100%;
-  height: 60rem;
-}
 .team__slider--photo {
   width: 100%;
-  height: 45rem;
+  height: 50rem;
   object-fit: cover;
   border-radius: 3px;
 }
 
 .footer {
-  background-color: #F53F45;
+  background-color: #B9000C;
   padding: 5rem 0;
   font-size: 1.4rem;
   color: #000;
+}
+.footer__judul {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.footer__desc {
+  color: #fff;
+  font-weight: 400;
+}
+.footer__links {
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  color: #eaeaea;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer__links:hover {
+  color: #000;
+}
+.footer__copy {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 .footer__logo-box {
   text-align: center;
@@ -492,13 +506,29 @@ body {
 .footer__list--2 {
   display: flex;
   justify-content: flex-end;
-  margin-top: 15.2rem;
+  margin-top: 15rem;
 }
 @media only screen and (max-width: 56.25em) {
   .footer__list--2 {
     justify-content: center;
     margin-top: 3rem;
   }
+}
+.footer__item {
+  display: flex;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.footer__item--1 {
+  align-items: center;
+}
+.footer__item--2 {
+  margin-right: 2rem;
+}
+.footer__item--p {
+  font-size: 1.8rem;
+  margin-left: 3rem;
+  color: #fff;
 }
 
 .navigation__checkbox {
@@ -843,10 +873,6 @@ ul li.active a {
   }
 }
 
-.project__iframe {
-  width: 100%;
-  height: 55rem;
-}
 .project__box {
   margin: 0 20rem;
   display: block;
@@ -908,10 +934,10 @@ ul li.active a {
 .card {
   perspective: 150rem;
   position: relative;
-  height: 45rem;
+  height: 50rem;
 }
 .card__side {
-  height: 45rem;
+  height: 50rem;
   transition: all 0.8s ease;
   border-radius: 3px;
   position: absolute;

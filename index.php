@@ -56,12 +56,14 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item active"><a href="#" class="navigation__link"><span>01</span>home</a></li>
-                <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span>history</a></li>
-                <li class="navigation__item"><a href="#service" class="navigation__link"><span>03</span>Prinsip</a>
+                <li class="navigation__item"><a href="#about" class="navigation__link"><span>02</span>Awal
+                        Berdirinya</a></li>
+                <li class="navigation__item"><a href="#visi" class="navigation__link"><span>03</span>Visi dan Misi</a>
                 </li>
-                <li class="navigation__item"><a href="#project" class="navigation__link"><span>04</span>Kegiatan</a>
+                <li class="navigation__item"><a href="#service" class="navigation__link"><span>04</span>Prinsip</a></li>
+                <li class="navigation__item"><a href="#project" class="navigation__link"><span>05</span>Kegiatan</a>
                 </li>
-                <li class="navigation__item"><a href="#team" class="navigation__link"><span>05</span>Team</a></li>
+                <li class="navigation__item"><a href="#team" class="navigation__link"><span>06</span>Team</a></li>
             </ul>
         </nav>
     </div>
@@ -107,14 +109,11 @@
                 <div class="col-1-of-2">
                     <div class="description">
                         <div class="u-center-text">
-                            <h2 class="heading-secondary">
-                                History of Company
+                            <h2 class="heading-secondary u-margin-bottom-small">
+                                Awal Berdirinya
                             </h2>
                         </div>
 
-                        <h3 class="heading-tertiary u-margin-bottom-medium u-center-text">
-                            Awal Mula Terbentuk
-                        </h3>
                         <p class="paragraph u-justify-text">
                             Lahir dari keinginan menyatukan kembali semua anak bangsa yang terkotak - kotak pasca
                             PilPres 2019 dengan menggelorakan kembali nilai - nilai Pancasila dan semangat Sumpah
@@ -133,13 +132,13 @@
         <!-- --- akhir-about --- -->
 
         <!-- --- awal-visi --- -->
-        <section class="section-visi">
+        <section class="section-visi" id="visi">
             <div class="u-center-text">
                 <h2 class="heading-secondary u-margin-bottom-small">
                     Visi dan Misi
                 </h2>
-                <p class="paragraph u-margin-bottom-medium .u-margin-x-small">
-                    Pancasila harus dilakukan
+                <p class="paragraph u-margin-bottom-medium u-padding-x-small">
+                    Internalisasi dan implementasi Pancasila harus dilakukan
                     melalui berbagai pendekatan sehingga dapat diterima oleh semua pihak pun berbeda pandangan dan
                     pilihan politik, suku, agama, dan ras untuk menangkal radikalisme, serta nilai dan ideologi lain
                     yang bertentangan dengan Pancasila. Apalagi sekadar "kontestasi politik lima tahunan" jangan
@@ -190,8 +189,8 @@
                 </p>
             </div>
 
-            <!-- <iframe src="project.php" frameborder="0" class="project__iframe"></iframe> -->
             <?php include('project.php') ?>
+
         </section>
         <!-- --- akhir-project --- -->
 
@@ -199,7 +198,7 @@
         <section class="section-team" id="team">
             <div class="team u-center-text">
                 <h2 class="heading-secondary u-margin-bottom-small">
-                    Our team
+                    Team Kami
                 </h2>
                 <p class="paragraph u-margin-bottom-medium">
                     Meet our energetics team dedicated to provide the best services you can acquire.
@@ -213,64 +212,93 @@
 
     <!-- --- awal footer --- -->
     <footer class="footer">
-        <div class="footer__logo-box">
-            <img src="img/logo.png" alt="Full logo" class="footer__logo">
+        <div class="row" style="margin-bottom: 0rem;">
+            <div class="col-1-of-3">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--1 u-margin-bottom-medium">
+                            <h3 class="footer__judul">Rekat Anak Bangsa</h3>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <h4 class="footer__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                                natus. Deserunt libero placeat quaerat alias vero. Eos qui saepe dolorum doloremque, a
+                                architecto asperiores illum, voluptates voluptatibus minus blanditiis unde?</h4>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--1 u-margin-bottom-medium">
+                            <h3 class="footer__judul">links</h3>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <a href="#" class="footer__links">Home</a>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <a href="#about" class="footer__links">Awal Berdirinya</a>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <a href="#visi" class="footer__links">Visi dan Misi</a>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <a href="#service" class="footer__links">Prinsip</a>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <a href="#project" class="footer__links">Kegiatan</a>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <a href="#team" class="footer__links">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--1 u-margin-bottom-medium">
+                            <h3 class="footer__judul">contact person</h3>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <label for="paragraph"><i class="fas fa-phone"></i></label>
+                            <p class="paragraph footer__item--p">+62 123 4567 8901</p>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <label for="paragraph"><i class="fas fa-map-marker-alt"></i></label>
+                            <p class="paragraph footer__item--p">Jl. Nangka Buana No. 01, Jakarta Pusat</p>
+                        </li>
+                        <li class="footer__item footer__item--1">
+                            <label for="paragraph"><i class="fas fa-envelope"></i></label>
+                            <p class="paragraph footer__item--p">business@rekat.id</p>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer__list--2">
+                        <li class="footer__item footer__item--2">
+                            <label for="paragraph">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </label>
+                        </li>
+                        <li class="footer__item footer__item--2">
+                            <label for="paragraph">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </label>
+                        </li>
+                        <li class="footer__item footer__item--2">
+                            <label for="paragraph">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="row">
-            <div class="col-1-of-3">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item footer__item--1">
-                            <h2 class="judul u-margin-bottom-small">Rekat Anak Bangsa</h2>
-                        </li>
-                        <li class="footer__item footer__item--1">
-                            <h3 class="judul__main">Merekatkan, menyatukan, dan menyejukkan diinisiasi pada tanggal
-                                1 oktober 2019.</h3>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item footer__item--1">
-                            <h2 class="judul u-margin-bottom-small">mempromosikan:</h2>
-                        </li>
-                        <li class="footer__item footer__item--1">
-                            <h3 class="judul__main">Internalisasi dan Implementasi Pancasila</h3>
-                            <p class="judul__sub u-margin-bottom-small">(untuk membangun karakter anak bangsa yang
-                                Pancasilais)</p>
-                        </li>
-                        <li class="footer__item footer__item--1">
-                            <h3 class="judul__main">Titik Temu</h3>
-                            <p class="judul__sub">(semua pandangan dan nilai-nilai Keindonesiaan serta Nasionalisme)</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-1-of-3">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item footer__item--1">
-                            <h3 class="judul__main u-margin-bottom-small">Solusi Keadilan Sosial dan Cinta Kasih yang
-                                mencerahkan</h3>
-                        </li>
-                        <li class="footer__item footer__item--1">
-                            <h3 class="judul__main">Kemajuan manusia Indonesia</h3>
-                            <p class="judul__sub u-margin-bottom-small">(dengan merawat tradisi, enjaga budaya, dan
-                                menghidupkan peradaban)
-                            </p>
-                        </li>
-                        <li class="footer__item footer__item--1">
-                            <h3 class="judul__main">Regenerasi total</h3>
-                            <p class="judul__sub">(melalui pembaruan semangat persatuan indonesia,
-                                munasabah, dan dialog berbagai isu kebangsaan)
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+        <h3 class="footer__copy">Copyright &copy;2020 | This template is made by Ratridcr</h3>
     </footer>
     <!-- --- akhir footer --- -->
 
@@ -299,7 +327,7 @@
                         melalui berbagai pendekatan sehingga dapat diterima oleh semua pihak pun berbeda pandangan dan
                         pilihan politik, suku, agama, dan ras untuk menangkal radikalisme, serta nilai dan ideologi lain
                         yang bertentangan dengan Pancasila. Apalagi sekadar "kontestasi politik lima tahunan" jangan
-                        sampai memecah belah anak bangsa. </p>
+                        sampai memecah belah anak bangsa.</p>
                     <div class="popup__button">
                         <a href="#about" class="btn btn--red">Back &rarr;</a>
                     </div>
