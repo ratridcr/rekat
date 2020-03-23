@@ -1,59 +1,18 @@
-.swiper-project {
-    margin-bottom: 6rem;
-    transition: all .3s;
-    position: relative;
-
-    @include respond(tab-port) {
-        margin-bottom: 0rem;
-    }
-
-    &__photo {
-        position: relative;
-        left: -25%;
-        margin-top: 4rem;
-
-        @include respond(mobile) {
-            width: 70%;
-            margin-right: 2.5rem;
-        }
-    }
-
-    &__text {
-        margin-top: 4rem;
-        text-align: center;
-        font-size: 5rem;
-        color: $color-black;
-
-    }
-
-    &__back {
-        content: "";
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        z-index: -1;
-        transform: translate(-50%, -50%);
-        filter: blur(50px);
-        box-shadow: 0 6px 50px 8px rgba($redDark, 0.15);
-
-        &--1 {
-            background-color: $color-gray;
-            width: 50rem;
-            height: 30rem;
-        }
-    }
-
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
 .project {
+
+    &__iframe {
+        width: 100%;
+        height: 55rem;
+    }
 
     &__box {
         margin: 0 20rem;
         display: block;
         position: relative;
+
+        @include respond(tab-port) {
+            margin: 0 8rem;
+        }
 
         &--name {
             width: 100%;
@@ -77,6 +36,10 @@
                 letter-spacing: .2rem;
                 font-weight: 600;
                 text-align: center;
+
+                @include respond(mobile) {
+                    font-size: 1.3rem;
+                }
             }
 
         }

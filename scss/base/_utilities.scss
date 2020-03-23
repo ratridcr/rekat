@@ -10,6 +10,11 @@
     text-align: justify !important;
 }
 
+.u-margin-x-small {
+    margin-right: 4rem !important;
+    margin-left: 4rem !important;
+}
+
 .u-margin-bottom-small {
     margin-bottom: 1.5rem !important;
 }
@@ -20,6 +25,10 @@
 
 .u-margin-bottom-big {
     margin-bottom: 8rem !important;
+
+    @include respond(mobile) {
+        margin-bottom: 4rem !important;
+    }
 }
 
 .u-margin-top-medium {
