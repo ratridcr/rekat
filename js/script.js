@@ -119,7 +119,7 @@ $(document).on('click', 'ul li', function () {
 $(document).ready(function () {
     setTimeout(function () {
         $(".preloader").fadeOut();
-    }, 4000);
+    }, 3000);
 })
 
 // --- awal-loader --- //
