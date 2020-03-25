@@ -8,6 +8,7 @@
     <title>Rekat Anak Bangsa</title>
     <link rel="shortcut icon" type="image/png" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/all.min.css">
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
@@ -35,12 +36,12 @@
 <body>
 
     <!-- --- awal loader --- -->
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="loader">
             <div class="loader__circle"></div>
             <div class="loader__circle"></div>
         </div>
-    </div> -->
+    </div>
     <!-- --- akhir loader --- -->
 
     <!-- --- awal navigation --- -->
@@ -78,11 +79,11 @@
             <h1 class="heading-primary u-margin-bottom-medium">
                 <span class="heading-primary--1">rekat anak bangsa</span>
                 <span class="heading-primary--2">rumah moderasi</span>
-                <span class="heading-primary--3">beragama dan berideologi</span>
+                <span class="heading-primary--3 u-margin-bottom-big">beragama dan berideologi</span>
             </h1>
-            <div class="header__button">
-                <a href="#about" class="btn btn--red btn--animated">Load more</a>
-            </div>
+        </div>
+        <div class="header__button">
+            <a href="#about" class="btn btn--red btn--animated smoothscroll">Load more</a>
         </div>
         <div class="header__img-box">
             <img src="img/banner.png" alt="" class="header__img-1">
@@ -97,7 +98,7 @@
         <section class="section-about" id="about">
 
             <div class="row">
-                <div class="col-1-of-2">
+                <div class="col-lg-6">
                     <img src="img/about.png" alt="Photo about" class="gambar__about">
                     <div class="gambar">
                         <img src="img/kompak.jpg" alt="Photo 1" class="gambar__photo gambar__photo--p1">
@@ -106,9 +107,12 @@
                     </div>
                 </div>
 
-                <div class="col-1-of-2">
+                <div class="col-lg-6">
                     <div class="description">
                         <div class="u-center-text">
+                            <h3 class="heading-tertiary">
+                                lorem
+                            </h3>
                             <h2 class="heading-secondary u-margin-bottom-small">
                                 Awal Berdirinya
                             </h2>
@@ -134,6 +138,9 @@
         <!-- --- awal-visi --- -->
         <section class="section-visi" id="visi">
             <div class="u-center-text">
+                <h3 class="heading-tertiary">
+                    lorem
+                </h3>
                 <h2 class="heading-secondary u-margin-bottom-small">
                     Visi dan Misi
                 </h2>
@@ -154,7 +161,7 @@
         <!-- --- awal-service --- -->
         <section class="section-service" id="service">
             <div class="row">
-                <div class="col-1-of-2">
+                <div class="col-lg-6">
                     <div class="u-center-text">
                         <h3 class="heading-tertiary">
                             10 Prinsip
@@ -171,7 +178,7 @@
                     <?php include('prinsip.php') ?>
 
                 </div>
-                <div class="col-1-of-2">
+                <div class="col-lg-6">
                     <img src="img/service.png" alt="Photo Service" class="service__photo">
                 </div>
             </div>
@@ -213,13 +220,13 @@
     <!-- --- awal footer --- -->
     <footer class="footer">
         <div class="row" style="margin-bottom: 0rem;">
-            <div class="col-1-of-3">
+            <div class="col-md-4">
                 <div class="footer__navigation">
                     <ul class="footer__list">
                         <li class="footer__item footer__item--1 u-margin-bottom-medium">
-                            <h3 class="footer__judul">Rekat Anak Bangsa</h3>
+                            <h2 class="footer__judul">Rekat Anak Bangsa</h2>
                         </li>
-                        <li class="footer__item footer__item--1">
+                        <li class="footer__item footer__item--1 u-margin-bottom-small">
                             <h4 class="footer__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
                                 natus. Deserunt libero placeat quaerat alias vero. Eos qui saepe dolorum doloremque, a
                                 architecto asperiores illum, voluptates voluptatibus minus blanditiis unde?</h4>
@@ -229,11 +236,11 @@
                 </div>
             </div>
 
-            <div class="col-1-of-3">
+            <div class="col-md-4">
                 <div class="footer__navigation">
                     <ul class="footer__list">
                         <li class="footer__item footer__item--1 u-margin-bottom-medium">
-                            <h3 class="footer__judul">links</h3>
+                            <h2 class="footer__judul">links</h2>
                         </li>
                         <li class="footer__item footer__item--1">
                             <a href="#" class="footer__links">Home</a>
@@ -250,18 +257,18 @@
                         <li class="footer__item footer__item--1">
                             <a href="#project" class="footer__links">Kegiatan</a>
                         </li>
-                        <li class="footer__item footer__item--1">
+                        <li class="footer__item footer__item--1 u-margin-bottom-small">
                             <a href="#team" class="footer__links">Team</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-1-of-3">
+            <div class="col-md-4">
                 <div class="footer__navigation">
                     <ul class="footer__list">
                         <li class="footer__item footer__item--1 u-margin-bottom-medium">
-                            <h3 class="footer__judul">contact person</h3>
+                            <h2 class="footer__judul">contact person</h2>
                         </li>
                         <li class="footer__item footer__item--1">
                             <label for="paragraph"><i class="fas fa-phone"></i></label>
@@ -271,7 +278,7 @@
                             <label for="paragraph"><i class="fas fa-map-marker-alt"></i></label>
                             <p class="paragraph footer__item--p">Jl. Nangka Buana No. 01, Jakarta Pusat</p>
                         </li>
-                        <li class="footer__item footer__item--1">
+                        <li class="footer__item footer__item--1 u-margin-bottom-small">
                             <label for="paragraph"><i class="fas fa-envelope"></i></label>
                             <p class="paragraph footer__item--p">business@rekat.id</p>
                         </li>
@@ -343,10 +350,10 @@
             <a href="#team" class="popup__close">&times;</a>
             <div class="popup__main">
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <img class="popup__photo" src="img/team1.jpg" alt="Team 1">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <div class="popup__text">
                             <h2 class="heading-secondary">Pembina</h2>
                             <hr class="heading-line">
@@ -390,10 +397,10 @@
             <a href="#team" class="popup__close">&times;</a>
             <div class="popup__main">
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <img class="popup__photo" src="img/team2.jpg" alt="Team 2">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <div class="popup__text">
                             <h2 class="heading-secondary">Ketua Umum</h2>
                             <hr class="heading-line">
@@ -436,10 +443,10 @@
             <a href="#team" class="popup__close">&times;</a>
             <div class="popup__main">
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <img class="popup__photo" src="img/team3.jpg" alt="Team 3">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <div class="popup__text">
                             <h2 class="heading-secondary">Ketua Harian</h2>
                             <hr class="heading-line">
@@ -478,10 +485,10 @@
             <a href="#team" class="popup__close">&times;</a>
             <div class="popup__main">
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <img class="popup__photo" src="img/team4.jpg" alt="Team 4">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <div class="popup__text">
                             <h2 class="heading-secondary">Wakil Ketua</h2>
                             <hr class="heading-line">
@@ -523,10 +530,10 @@
             <a href="#team" class="popup__close">&times;</a>
             <div class="popup__main">
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <img class="popup__photo" src="img/team5.jpg" alt="Team 5">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <div class="popup__text">
                             <h2 class="heading-secondary">Sekretaris Jenderal</h2>
                             <hr class="heading-line">
@@ -562,10 +569,10 @@
             <a href="#team" class="popup__close">&times;</a>
             <div class="popup__main">
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <img class="popup__photo" src="img/team6.jpg" alt="Team 6">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-md-6">
                         <div class="popup__text">
                             <h2 class="heading-secondary">Bendahara</h2>
                             <hr class="heading-line">
@@ -603,6 +610,7 @@
     </div>
     <!-- --- Akhir Popup Team 6--- -->
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="font-awesome/js/all.min.js"></script>
     <script src="swiper/js/swiper.min.js"></script>

@@ -3,8 +3,21 @@
     position: relative;
 
     &__button {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+        transform: translateY(-50%);
+
+        @include respond(tab-port) {
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         @include respond(mobile) {
-            text-align: center;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -15,7 +28,9 @@
         transform: translateY(-50%);
 
         @include respond(tab-port) {
-            top: 60%;
+            top: 50%;
+            left: 25%;
+            transform: translate(-15%, -35%);
         }
 
         @include respond(mobile) {

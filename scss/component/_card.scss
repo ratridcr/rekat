@@ -1,7 +1,11 @@
-.card {
+.kartu {
     perspective: 150rem;
     position: relative;
     height: 50rem;
+
+    @include respond(mobile) {
+        height: 60rem;
+    }
 
     &__side {
         height: 50rem;
@@ -12,6 +16,10 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
+
+        @include respond(mobile) {
+            height: 60rem;
+        }
 
         &--front {
             background-color: $color-white;

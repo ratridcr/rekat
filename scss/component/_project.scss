@@ -33,7 +33,7 @@
                 text-align: center;
 
                 @include respond(mobile) {
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -46,7 +46,7 @@
             top: 0;
             left: 0;
             right: 0;
-            bottom: 4px;
+            bottom: 0;
             background: rgba($color-black, .6);
             visibility: hidden;
             opacity: 0;

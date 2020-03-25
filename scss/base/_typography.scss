@@ -19,6 +19,10 @@ body {
         animation: moveInLeft 1s ease-out;
         animation-delay: 4s;
 
+        @include respond(tab-port) {
+            text-align: center;
+        }
+
         @include respond(mobile) {
             font-size: 20px;
             font-weight: 800;

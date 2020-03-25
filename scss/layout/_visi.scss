@@ -6,6 +6,10 @@
     margin: 2rem 0;
     transition: all .3s;
 
+    @include respond(tab-port) {
+        height: 30rem;
+    }
+
     &:hover {
         transform: translateY(-1rem);
         box-shadow: .5rem 1rem 2rem rgba($red, 0.2);

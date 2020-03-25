@@ -20,6 +20,10 @@
 
 .u-margin-bottom-medium {
     margin-bottom: 4rem !important;
+
+    @include respond(mobile) {
+        margin-bottom: 1rem !important;
+    }
 }
 
 .u-margin-bottom-big {

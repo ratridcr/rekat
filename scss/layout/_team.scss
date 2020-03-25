@@ -6,6 +6,10 @@
             height: 50rem;
             object-fit: cover;
             border-radius: 3px;
+
+            @include respond(mobile) {
+                height: 60rem;
+            }
         }
 
     }

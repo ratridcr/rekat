@@ -70,6 +70,11 @@ body {
   animation: moveInLeft 1s ease-out;
   animation-delay: 4s;
 }
+@media only screen and (max-width: 56.25em) {
+  .heading-primary--1 {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .heading-primary--1 {
     font-size: 20px;
@@ -238,6 +243,11 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 }
+@media only screen and (max-width: 37.5em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 1rem !important;
+  }
+}
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
@@ -310,59 +320,6 @@ body {
     transform: translate(0);
   }
 }
-.row {
-  max-width: 144rem;
-  margin: 0 auto;
-}
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .row:not(:last-child) {
-    margin-bottom: 6rem;
-  }
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.row [class^=col-] {
-  float: left;
-}
-.row [class^=col-]:not(:last-child) {
-  margin-right: 6rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .row [class^=col-]:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 6rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .row [class^=col-] {
-    width: 100% !important;
-  }
-}
-.row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
-}
-.row .col-1-of-3 {
-  width: calc((100% - (2 * 6rem)) / 3);
-}
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
-}
-.row .col-1-of-4 {
-  width: calc((100% - (3 * 6rem)) / 4);
-}
-.row .col-2-of-4 {
-  width: calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
-}
-.row .col-3-of-4 {
-  width: calc(3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
-}
-
 .kotak {
   width: 600px;
   height: 600px;
@@ -384,9 +341,24 @@ body {
   height: 100vh;
   position: relative;
 }
+.header__button {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 56.25em) {
+  .header__button {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .header__button {
-    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .header__text-box {
@@ -397,7 +369,9 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .header__text-box {
-    top: 60%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-15%, -35%);
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -462,6 +436,11 @@ body {
   object-fit: cover;
   border-radius: 3px;
 }
+@media only screen and (max-width: 37.5em) {
+  .team__slider--photo {
+    height: 60rem;
+  }
+}
 
 .footer {
   background-color: #B9000C;
@@ -478,7 +457,7 @@ body {
   font-weight: 400;
 }
 .footer__links {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   font-weight: 300;
   color: #eaeaea;
   text-decoration: none;
@@ -486,11 +465,13 @@ body {
 }
 .footer__links:hover {
   color: #000;
+  text-decoration: none;
 }
 .footer__copy {
   color: #fff;
   font-weight: 400;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 .footer__logo-box {
   text-align: center;
@@ -673,6 +654,11 @@ ul li.active a {
   margin: 2rem 0;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 56.25em) {
+  .visi {
+    height: 30rem;
+  }
+}
 .visi:hover {
   transform: translateY(-1rem);
   box-shadow: 0.5rem 1rem 2rem rgba(185, 0, 12, 0.2);
@@ -787,13 +773,14 @@ ul li.active a {
 @media only screen and (max-width: 56.25em) {
   .gambar__photo {
     width: 40%;
-    margin-top: -50%;
+    margin-top: -40%;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .gambar__photo {
     outline-offset: 0.8rem;
     margin-top: 0;
+    margin-bottom: 10rem;
     float: left;
     position: relative;
     width: 33.33333333%;
@@ -907,7 +894,7 @@ ul li.active a {
 }
 @media only screen and (max-width: 37.5em) {
   .project__box--name-1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 .project__box:after {
@@ -917,7 +904,7 @@ ul li.active a {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 4px;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   visibility: hidden;
   opacity: 0;
@@ -931,12 +918,17 @@ ul li.active a {
   width: 100%;
 }
 
-.card {
+.kartu {
   perspective: 150rem;
   position: relative;
   height: 50rem;
 }
-.card__side {
+@media only screen and (max-width: 37.5em) {
+  .kartu {
+    height: 60rem;
+  }
+}
+.kartu__side {
   height: 50rem;
   transition: all 0.8s ease;
   border-radius: 3px;
@@ -947,20 +939,25 @@ ul li.active a {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.card__side--front {
+@media only screen and (max-width: 37.5em) {
+  .kartu__side {
+    height: 60rem;
+  }
+}
+.kartu__side--front {
   background-color: #fff;
 }
-.card__side--back {
+.kartu__side--back {
   transform: rotateY(180deg);
   background-image: linear-gradient(to right bottom, #86020C, #F53F45);
 }
-.card:hover .card__side--front {
+.kartu:hover .kartu__side--front {
   transform: rotateY(-180deg);
 }
-.card:hover .card__side--back {
+.kartu:hover .kartu__side--back {
   transform: rotateY(0deg);
 }
-.card__cta {
+.kartu__cta {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -968,17 +965,17 @@ ul li.active a {
   width: 90%;
   text-align: center;
 }
-.card__price-box {
+.kartu__price-box {
   text-align: center;
   margin-bottom: 8rem;
   color: #fff;
 }
-.card__price-only {
+.kartu__price-only {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-.card__price-value {
+.kartu__price-value {
   font-size: 4.5rem;
   font-weight: 200;
   text-transform: uppercase;
@@ -1151,7 +1148,7 @@ ul li.active a {
   width: 100%;
   border-radius: 0.2rem;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 37.5em) {
   .popup__photo {
     display: none;
   }
@@ -1216,7 +1213,7 @@ ul li.active a {
 .section-team,
 .section-contact,
 .section-visi {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 }
 
