@@ -68,7 +68,7 @@ body {
   letter-spacing: 3px;
   margin-bottom: 20px;
   animation: moveInLeft 1s ease-out;
-  animation-delay: 4s;
+  animation-delay: 1.8s;
 }
 @media only screen and (max-width: 56.25em) {
   .heading-primary--1 {
@@ -90,7 +90,7 @@ body {
   letter-spacing: 10px;
   margin-bottom: 20px;
   animation: moveInRight 1s ease-out;
-  animation-delay: 4s;
+  animation-delay: 1.8s;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--2 {
@@ -105,7 +105,7 @@ body {
   font-weight: 700;
   letter-spacing: 3.8px;
   animation: moveInLeft 1s ease-out;
-  animation-delay: 4s;
+  animation-delay: 1.8s;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--3 {
@@ -731,7 +731,7 @@ ul li.active a {
 .btn--animated {
   animation: moveInBottom 1s ease-out 0.75s;
   animation-fill-mode: backwards;
-  animation-delay: 4s;
+  animation-delay: 1.8s;
 }
 
 .btn-text:link, .btn-text:visited {
