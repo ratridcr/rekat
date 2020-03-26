@@ -170,6 +170,11 @@ body {
   color: #B9000C;
   text-align: center;
 }
+@media only screen and (max-width: 37.5em) {
+  .judul__main {
+    font-size: 2rem;
+  }
+}
 .judul__sub {
   text-transform: none;
   letter-spacing: 2px;
@@ -418,7 +423,8 @@ body {
 .header__logo-box {
   position: absolute;
   top: 5%;
-  left: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header__logo {
   height: 12rem;
@@ -455,6 +461,12 @@ body {
   .team__slider--photo {
     height: 60rem;
   }
+}
+.team__box {
+  display: inline-block;
+}
+.team__box:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .footer {

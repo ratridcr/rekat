@@ -120,6 +120,10 @@ body {
         letter-spacing: 2px;
         color: $red;
         text-align: center;
+
+        @include respond(mobile) {
+            font-size: 2rem;
+        }
     }
 
     &__sub {
