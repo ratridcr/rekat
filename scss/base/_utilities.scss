@@ -12,6 +12,10 @@
 
 .u-padding-x-small {
     padding: 0 5rem !important;
+
+    @include respond(mobile) {
+        padding: 0 !important;
+    }
 }
 
 .u-margin-bottom-small {

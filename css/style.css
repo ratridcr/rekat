@@ -172,7 +172,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .judul__main {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 .judul__sub {
@@ -239,6 +239,11 @@ body {
 
 .u-padding-x-small {
   padding: 0 5rem !important;
+}
+@media only screen and (max-width: 37.5em) {
+  .u-padding-x-small {
+    padding: 0 !important;
+  }
 }
 
 .u-margin-bottom-small {
